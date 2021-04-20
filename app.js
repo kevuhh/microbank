@@ -7,5 +7,5 @@ app.get('/', (req, res) => {
 });
 app.use('/client', express.static(__dirname + '/client'));
 
-serv.listen(3000);
+serv.listen(6969);
 console.log("Server started.");

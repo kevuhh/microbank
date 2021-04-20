@@ -14,78 +14,295 @@
     href="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.4.1/semantic.min.css">
   <script src="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.4.1/semantic.min.js"></script>
   <script src="/client/js/index.js"></script>
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-eOJMYsd53ii+scO/bJGFsiCZc+5NDVN2yr8+0RDqr0Ql0h+rP48ckxlpbzKgwra6" crossorigin="anonymous">
-  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.1/dist/umd/popper.min.js" integrity="sha384-SR1sx49pcuLnqZUnnPwx6FCym0wLsk5JZuNx2bPPENzswTNFaQU1RDvt3wT4gWFG" crossorigin="anonymous"></script>
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/js/bootstrap.min.js" integrity="sha384-j0CNLUeiqtyaRmlzUHCPZ+Gy5fQu0dQ6eZ/xAww941Ai1SxSY+0EQqNXNE6DZiVc" crossorigin="anonymous"></script>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-eOJMYsd53ii+scO/bJGFsiCZc+5NDVN2yr8+0RDqr0Ql0h+rP48ckxlpbzKgwra6" crossorigin="anonymous">
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.1/dist/umd/popper.min.js"
+    integrity="sha384-SR1sx49pcuLnqZUnnPwx6FCym0wLsk5JZuNx2bPPENzswTNFaQU1RDvt3wT4gWFG"
+    crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/js/bootstrap.min.js"
+    integrity="sha384-j0CNLUeiqtyaRmlzUHCPZ+Gy5fQu0dQ6eZ/xAww941Ai1SxSY+0EQqNXNE6DZiVc"
+    crossorigin="anonymous"></script>
 </head>
 
 <body>
+
   <div class="ui labeled icon fluid six item menu">
     <a href="/" class="item">
       <img class="ui fluid image" src="/client/img/microbanklogoW.png"></img>
     </a>
 
-    <a class="item">
+    <a class="item" id="portfolio-button">
       <i class="folder open icon"></i>
       Portfolio
     </a>
-    <a class="item">
+    <a class="item" id="help-button">
       <i class="hand paper icon"></i>
       How to Help
     </a>
-    <a class="item">
+    <a class="item" id="approach-button">
       <i class="chart line icon"></i>
       Our Approach
     </a>
-    <a class="item">
+    <a class="item" id="blog-button">
       <i class="pencil alternate icon"></i>
       Blog
     </a>
-    <a class="item">
+    <a class="item" id="about-button">
       <i class="question circle icon"></i>
       About Us
     </a>
   </div>
-  <div id="carouselExampleIndicators" class="carousel carousel-dark carousel-fade slide" data-bs-ride="carousel">
-    <div class="carousel-indicators">
-      <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active"
-        aria-current="true" aria-label="Slide 1"></button>
-      <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1"
-        aria-label="Slide 2"></button>
-      <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2"
-        aria-label="Slide 3"></button>
+
+  <div class="mainContent" id="home">
+    <div id="carouselExampleIndicators" class="carousel carousel-dark carousel-fade slide" data-bs-ride="carousel">
+      <div class="carousel-indicators">
+        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active"
+          aria-current="true" aria-label="Slide 1"></button>
+        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1"
+          aria-label="Slide 2"></button>
+        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2"
+          aria-label="Slide 3"></button>
+      </div>
+      <div class="carousel-inner">
+        <div class="carousel-item active" data-bs-interval="5000">
+          <img src="/client/img/fillerperson1.jpg" class="d-block w-100">
+          <div class="carousel-caption d-none d-md-block">
+            <button type="button" class="btn btn-lg btn-primary">Read More</button>
+          </div>
+        </div>
+        <div class="carousel-item" data-bs-interval="5000">
+          <img src="/client/img/fillerperson2.jpg" class="d-block w-100">
+          <div class="carousel-caption d-none d-md-block">
+            <button type="button" class="btn btn-lg btn-primary">Read More</button>
+          </div>
+        </div>
+        <div class="carousel-item" data-bs-interval="5000">
+          <img src="/client/img/fillerperson3.jpg" class="d-block w-100">
+          <div class="carousel-caption d-none d-md-block">
+            <button type="button" class="btn btn-lg btn-primary">Read More</button>
+          </div>
+        </div>
+      </div>
+      <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators"
+        data-bs-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Previous</span>
+      </button>
+      <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators"
+        data-bs-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Next</span>
+      </button>
     </div>
-    <div class="carousel-inner">
-      <div class="carousel-item active" data-bs-interval="5000">
-        <img src="/client/img/fillerperson1.jpg" class="d-block w-100">
-        <div class="carousel-caption d-none d-md-block">
-          <button type="button" class="btn btn-lg btn-primary">Read More</button>
+    <div class="ui center aligned raised segment" style="background-color: #E6DBDB;">
+      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur porttitor nulla sapien, sed eleifend nisl
+        dictum id. Morbi pharetra a ligula vel dignissim. Quisque ut nulla at lacus semper convallis. Integer urna
+        justo,
+        vestibulum ut risus id, ullamcorper pulvinar nisl. Proin eget faucibus est, a tincidunt enim. Nunc non ipsum
+        quis
+        nunc rhoncus dignissim vel vitae magna. Quisque venenatis lectus arcu, nec dignissim augue dignissim vel.
+        Suspendisse fermentum metus quis iaculis euismod. Duis dictum felis massa, quis egestas justo suscipit sed.
+      </p>
+    </div>
+    <div class="ui stacked segment" style="background-color: #E6DBDB;">
+      <div class="ui three statistics">
+        <div class="statistic">
+          <div class="value">
+            22
+          </div>
+          <div class="label">
+            Loans
+          </div>
         </div>
-      </div>
-      <div class="carousel-item" data-bs-interval="5000">
-        <img src="/client/img/fillerperson2.jpg" class="d-block w-100">
-        <div class="carousel-caption d-none d-md-block">
-          <button type="button" class="btn btn-lg btn-primary">Read More</button>
+        <div class="statistic">
+          <div class="value">
+            31,200
+          </div>
+          <div class="label">
+            Donated
+          </div>
         </div>
-      </div>
-      <div class="carousel-item" data-bs-interval="5000">
-        <img src="/client/img/fillerperson3.jpg" class="d-block w-100">
-        <div class="carousel-caption d-none d-md-block">
-          <button type="button" class="btn btn-lg btn-primary">Read More</button>
+        <div class="statistic">
+          <div class="value">
+            3
+          </div>
+          <div class="label">
+            Partners
+          </div>
         </div>
       </div>
     </div>
-    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators"
-      data-bs-slide="prev">
-      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-      <span class="visually-hidden">Previous</span>
-    </button>
-    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators"
-      data-bs-slide="next">
-      <span class="carousel-control-next-icon" aria-hidden="true"></span>
-      <span class="visually-hidden">Next</span>
-    </button>
   </div>
+
+  <div class="mainContent" style="display: none;" id="portfolio">
+    <div class="ui link cards">
+      <div class="card">
+        <div class="image">
+          <img src="/client/img/fillerperson1.jpg">
+        </div>
+        <div class="content">
+          <div class="header">Epic Company</div>
+          <div class="meta">
+            <a>Nonprofit</a>
+          </div>
+          <div class="description">
+            This company is epic.
+          </div>
+        </div>
+        <div class="extra content">
+          <span class="right floated">
+            Partnered in 2069
+          </span>
+          <span>
+            <i class="chart line icon"></i>
+            $69 Loan
+          </span>
+        </div>
+      </div>
+      <div class="card">
+        <div class="image">
+          <img src="/client/img/fillerperson2.jpg">
+        </div>
+        <div class="content">
+          <div class="header">Epic Company</div>
+          <div class="meta">
+            <a>Nonprofit</a>
+          </div>
+          <div class="description">
+            This company is epic.
+          </div>
+        </div>
+        <div class="extra content">
+          <span class="right floated">
+            Partnered in 2069
+          </span>
+          <span>
+            <i class="chart line icon"></i>
+            $69 Loan
+          </span>
+        </div>
+      </div>
+      <div class="card">
+        <div class="image">
+          <img src="/client/img/fillerperson3.jpg">
+        </div>
+        <div class="content">
+          <div class="header">Epic Company</div>
+          <div class="meta">
+            <a>Nonprofit</a>
+          </div>
+          <div class="description">
+            This company is epic.
+          </div>
+        </div>
+        <div class="extra content">
+          <span class="right floated">
+            Partnered in 2069
+          </span>
+          <span>
+            <i class="chart line icon"></i>
+            $69 Loan
+          </span>
+        </div>
+      </div>
+      <div class="card">
+        <div class="image">
+          <img src="/client/img/fillerperson1.jpg">
+        </div>
+        <div class="content">
+          <div class="header">Epic Company</div>
+          <div class="meta">
+            <a>Nonprofit</a>
+          </div>
+          <div class="description">
+            This company is epic.
+          </div>
+        </div>
+        <div class="extra content">
+          <span class="right floated">
+            Partnered in 2069
+          </span>
+          <span>
+            <i class="chart line icon"></i>
+            $69 Loan
+          </span>
+        </div>
+      </div>
+      <div class="card">
+        <div class="image">
+          <img src="/client/img/fillerperson2.jpg">
+        </div>
+        <div class="content">
+          <div class="header">Epic Company</div>
+          <div class="meta">
+            <a>Nonprofit</a>
+          </div>
+          <div class="description">
+            This company is epic.
+          </div>
+        </div>
+        <div class="extra content">
+          <span class="right floated">
+            Partnered in 2069
+          </span>
+          <span>
+            <i class="chart line icon"></i>
+            $69 Loan
+          </span>
+        </div>
+      </div>
+      <div class="card">
+        <div class="image">
+          <img src="/client/img/fillerperson3.jpg">
+        </div>
+        <div class="content">
+          <div class="header">Epic Company</div>
+          <div class="meta">
+            <a>Nonprofit</a>
+          </div>
+          <div class="description">
+            This company is epic.
+          </div>
+        </div>
+        <div class="extra content">
+          <span class="right floated">
+            Partnered in 2069
+          </span>
+          <span>
+            <i class="chart line icon"></i>
+            $69 Loan
+          </span>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="mainContent" style="display: none;" id="help">
+    help
+  </div>
+
+  <div class="mainContent" style="display: none;" id="approach">
+    approach
+  </div>
+
+  <div class="mainContent" style="display: none;" id="blog">
+    blog
+  </div>
+
+  <div class="mainContent" style="display: none;" id="about">
+    about
+  </div>
+  <footer>
+    <div class="ui inverted center aligned segment" style="background-color: #0A2239;">
+      <p>Email: nigelisfat@gmail.com</p>
+      <p>Phone Number: 666-420-6969</p>
+      <p>MicroBank Copyright © 2021</p>
+    </div>
+  </footer>
+
+
+
+
 </body>
 
 </html>
